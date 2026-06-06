@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Silun Zhang</title>
+  <meta name="description" content="Research interests and projects of Silun Zhang.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="index.html">Silun Zhang</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="group.html">Group</a>
+        <a href="courses.html">Courses</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <aside class="profile" aria-label="Profile">
+      <img src="assets/img/silun-zhang.jpg" alt="Silun Zhang">
+      <div class="profile-text">
+        <h1>Silun Zhang</h1>
+        <p class="role">Assistant Professor, Department of Mathematics, KTH Royal Institute of Technology</p>
+        <dl>
+          <dt>Email</dt>
+          <dd><span data-email-text>silunz{at}kth{dot}se</span> <button class="inline-action js-only" type="button" data-copy="silunz@kth.se">(Copy)</button></dd>
+        </dl>
+        <!--
+        <ul class="profile-links" aria-label="Profile links">
+              <a href="https://scholar.google.com/citations?hl=en&user=YQnTY-AAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
+        </ul>
+      -->
+      </div>
+    </aside>
+
+    <main>
+      <p class="eyebrow">Research</p>
+      <!-- <h1 class="page-title">Control, incentive design, large-scale systems, and safe learning</h1>
+      -->
+      
+      <section class="section" id="overview">
+        <h2>Research Interests</h2>
+        <p>My research interests lie broadly in control and optimization, incentive design, large-scale systems, and risk-averse/safe learning. Specific topics that I have been dedicated to include:</p>
+        <ul class="plain-list">
+          <li>Incentive design and games.</li>
+          <li>Control and optimization on manifolds and networks.</li>
+          <li>Moment-based modeling and control of large-scale systems.</li>
+          <li>Robust and safe learning.</li>
+        </ul>
+        
+        <!--
+        <div class="central-question" aria-label="Central question behind my research">
+          <img class="central-question-icon" src="assets/img/research/ai-brain-chip-icon.png" alt="Brain and circuit chip icon" loading="lazy" decoding="async">
+          <div class="central-question-copy">
+            <p class="central-question-title">The <strong>central question</strong> behind my research is:</p>
+            <p class="central-question-text">How can systems learn and optimize when their own decisions shape the data, the agents, and the dynamical environments they interact with?</p>
+          </div>
+        </div>
+        -->
+
+
+        <!--
+        <div class="quick-links">
+          <span class="quick-label">Research areas</span>
+          <a href="#incentives">Incentives</a>
+          <a href="#manifolds">Manifolds</a>
+          <a href="#moments">Moments</a>
+          <a href="#privacy">Privacy</a>
+          <a href="publications.html">Publications</a>
+        </div>
+        -->
+      </section>
+
+      <section class="section" id="incentives">
+        <h2>Incentive Design for Strategic Agents</h2>
+        <div class="research-feature">
+          <div class="research-copy">
+            <p>Modern infrastructure often interacts with strategic agents. Electricity consumers decide when to use power, drivers choose routes, and data owners determine what information to contribute. In each case, a central planner cannot directly prescribe the agents' actions but instead influences them through incentive signals such as pricing, subsidies, tolls, and taxes.</p>
+            <p>Our work studies <strong> incentive design as a feedback loop</strong>. Planners observe strategic agent responses, learn about their preferences, and update incentive mechanisms to steer the Nash equilibrium toward desired collective objectives such as welfare, fairness, or safety. The goal is not only to compute incentives when the model is known, but also to adapt incentives online under <strong>information asymmetry</strong> and provide performance guarantees.</p> 
+            <p>This creates a natural connection between <strong>control, optimization, online learning, game theory,</strong> and <strong>multi-agent systems</strong>.</p>
+          </div>
+        </div>
+        <div class="topic-visual">
+          <figure class="topic-figure topic-figure-portrait">
+            <img src="assets/img/research/incentive-design-loop.png" alt="Central planner learning strategic agent preferences and updating incentive signals to steer a Nash equilibrium." width="1145" height="1374" loading="lazy" decoding="async">
+            <figcaption><strong>Incentive design as a feedback loop between a central planner and strategic agents.</strong> </figcaption>
+          </figure>
+        </div>
+        <div class="paper-links" aria-label="Representative incentive design papers">
+          <span class="quick-label">Representative papers</span>
+          <a href="https://arxiv.org/pdf/2606.02529" target="_blank" rel="noreferrer">No-Regret Framework</a>    
+          <a href="https://arxiv.org/pdf/2604.11346" target="_blank" rel="noreferrer">Social-Gradient Method</a>
+          <a href="https://arxiv.org/pdf/2504.02995" target="_blank" rel="noreferrer">Online Learning</a>
+          <a href="https://arxiv.org/pdf/2604.06980" target="_blank" rel="noreferrer">Adaptive Controller</a>
+        </div>
+      </section>
+
+      <section class="section" id="manifolds">
+        <h2>Control on Manifolds &amp; Intrinsic Formation</h2>
+        <p>Control and optimization on manifolds in a distributed manner have become timely issues in large-scale systems. By identifying and exploiting geometric structures in high-dimensional data and states, one can reduce the complexity of large-scale problems and make distributed algorithms more informationally efficient and computationally tractable.</p>
+        <p>We employed this line of work on differentiable manifolds, particularly the n-sphere S<sup>n</sup> and the Lie group SO(3), which appear in many <strong>rigid-body attitude</strong> applications. Based on distributed algorithms for state consensus, or distributed minimization of deviations between individuals, in non-Euclidean spaces, we further investigated formation problems for multiple rigid bodies.</p>
+        <p>Unlike many studies in formation control, this formation mechanism does not require a pre-given shape reference signal in the control protocol. Instead, the desired formation patterns are constructed based on the geometric properties of the configuration space and the designed connection topology. This type of formation is referred to as <strong>intrinsic formation control</strong>.</p>
+        <p>This research is both theoretically and practically significant for applications such as satellite constellation maneuvering, drone cluster coordination, and multi-robot systems control.</p>
+        <div class="topic-visual topic-visual-grid" aria-label="Manifold and formation control figures">
+          <figure class="topic-figure">
+            <img src="assets/img/research/manifold-geometries.gif" alt="Examples of elliptic, Euclidean, and hyperbolic geometries." width="599" height="346" loading="lazy" decoding="async">
+            <figcaption>Non-Euclidean geometries for control and optimization.</figcaption>
+          </figure>
+          <figure class="topic-figure">
+            <img src="assets/img/research/intrinsic-formations.gif" alt="Tetrahedron, octahedron, and dodecahedron formations on the sphere." width="604" height="346" loading="lazy" decoding="async">
+            <figcaption>Intrinsic formations on spherical configuration spaces.</figcaption>
+          </figure>
+        </div>
+        <div class="paper-links" aria-label="Representative manifold papers">
+          <span class="quick-label">Representative papers</span>
+          <a href="https://arxiv.org/abs/1805.07823" target="_blank" rel="noreferrer">Polyhedra Formation</a>
+          <a href="https://doi.org/10.1016/j.automatica.2017.10.023" target="_blank" rel="noreferrer">Intrinsic Tetrahedron Formation</a>
+          <a href="https://doi.org/10.1016/j.automatica.2017.07.015" target="_blank" rel="noreferrer">Ring graph</a>
+          <a href="https://ieeexplore.ieee.org/document/8267247" target="_blank" rel="noreferrer">Finite-time</a>
+          <a href="https://ieeexplore.ieee.org/document/8482861" target="_blank" rel="noreferrer">Exp. Stability</a>
+        </div>
+      </section>
+
+      <section class="section" id="moments">
+        <h2>Modeling &amp; Control of Large-Scale Systems by Moments</h2>
+        <div class="research-feature">
+          <div class="research-copy">
+            <p>Large-scale networked systems typically consist of a large number of connected agents, often too many to model individually. Moreover, in many cases the agents are exchangeable, and distinguishing each individual may not even be desirable.</p>
+            <p>We proposed a moment-based approach to characterizing the evolution of a network by a sequence of <strong>moments</strong>. In general, moments represent statistics and realistically measured quantities of a cohort. By properly selecting kernel functions, the corresponding moments carry sufficient macro-scale information so that collective behavior can be reconstructed.</p>
+            <p>The method provides a tractable approach to building dynamics for a general moment sequence. The resulting moment systems typically permit less intricate and lower-dimensional dynamics, which <strong>considerably reduces computational complexity</strong> for control and analysis.</p>
+            <p>The method is applicable to a wide range of problems, including multi-agent systems, crowd dynamics, opinion dynamics, and collective behavior in biology, economics, and social sciences.</p>
+            <p class="research-note"><strong>Application highlight:</strong> control of a pedestrian crowd by the moment method.</p>
+          </div>
+        </div>
+        <div class="topic-visual">
+          <figure class="topic-figure topic-figure-wide">
+            <img src="assets/img/research/moment-crowd-control.png" alt="Density and agent distribution plots for pedestrian crowd control by moments." width="794" height="597" loading="lazy" decoding="async">
+            <figcaption>Moment-based representation and control of a pedestrian crowd.</figcaption>
+          </figure>
+        </div>
+        <div class="paper-links" aria-label="Representative moment paper">
+          <span class="quick-label">Representative paper</span>
+          <a href="https://ieeexplore.ieee.org/document/9013036" target="_blank" rel="noreferrer">IEEE TAC</a>
+        </div>
+      </section>
+
+      <section class="section" id="privacy">
+        <h2>Network Coordination with Privacy</h2>
+        <div class="research-feature">
+          <div class="research-copy">
+            <p>In many <strong>Internet of Things</strong> applications, privacy is a hotly debated topic and subject to regulations such as <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation" target="_blank" rel="noreferrer">GDPR</a>, <a href="https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act" target="_blank" rel="noreferrer">PIPEDA</a>, and <a href="https://en.wikipedia.org/wiki/California_Consumer_Privacy_Act" target="_blank" rel="noreferrer">CCPA</a>. When sensitive data is exchanged between parties, there is no guarantee that it remains private or that it is not used for unintended purposes.</p>
+            <p>We study privacy-preserving approaches for network coordination, by which all nodes in a network can achieve collective goals such as consensus, collaboratively optimizing a function, and training in <strong>federated learning</strong> without exposing individual privacy to other parties.</p>
+            <p>In contrast to methods that use cryptography, we pursue the preservation of participants' privacy in information exchanges over networks from the perspective of dynamical systems theory, which offers greater computational efficiency and application flexibility.</p>
+          </div>
+        </div>
+        <div class="topic-visual">
+          <figure class="topic-figure topic-figure-wide">
+            <img src="assets/img/research/privacy-network.jpg" alt="Connected devices over a city illustrating privacy in Internet of Things systems." width="700" height="393" loading="lazy" decoding="async">
+            <figcaption>Privacy-preserving coordination for connected networked systems.</figcaption>
+          </figure>
+        </div>
+        <div class="paper-links" aria-label="Representative privacy papers">
+          <span class="quick-label">Representative papers</span>
+          <a href="https://arxiv.org/abs/2103.03432" target="_blank" rel="noreferrer">Network Consensus with Privacy</a>
+          <a href="https://arxiv.org/abs/2011.09646" target="_blank" rel="noreferrer">Collusion-Proof Consensus</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>Silun Zhang, KTH Royal Institute of Technology.</p>
+  </footer>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
