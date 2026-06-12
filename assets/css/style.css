@@ -683,6 +683,19 @@ main {
   padding: 5px 7px;
 }
 
+.pub-overview {
+  display: inline-flex;
+  font-size: 12px;
+  margin-left: 6px;
+  padding: 5px 7px;
+  vertical-align: baseline;
+}
+
+.pub-overview:hover,
+.pub-overview:focus {
+  text-decoration: none;
+}
+
 .tag {
   color: var(--warm);
   font-family: Arial, Helvetica, sans-serif;

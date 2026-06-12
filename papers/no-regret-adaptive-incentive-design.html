@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>A No-Regret Framework for Adaptive Incentive Design | Silun Zhang</title>
-  <meta name="description" content="Short overview of A No-Regret Framework for Adaptive Incentive Design by G. Vasileiou, L. Zhang, and S. Zhang.">
+  <meta name="description" content="Overview of A No-Regret Framework for Adaptive Incentive Design by G. Vasileiou, L. Zhang, and S. Zhang, including takeaway, contribution, links, and BibTeX.">
   <meta name="citation_title" content="A No-Regret Framework for Adaptive Incentive Design">
   <meta name="citation_author" content="Vasileiou, G.">
   <meta name="citation_author" content="Zhang, L.">
@@ -48,26 +48,27 @@
       <section class="section compact">
         <h1 class="paper-title">A No-Regret Framework for Adaptive Incentive Design</h1>
         <p class="paper-authors">G. Vasileiou, L. Zhang, and S. Zhang, 2026.</p>
-        <p class="paper-takeaway"><strong>Takeaway:</strong> We design adaptive incentives that steer strategic agents toward socially desirable equilibria while learning their private preferences online.</p>
+        <p class="paper-takeaway"><strong>Takeaway:</strong> The paper introduces a no-regret adaptive incentive design framework that learns agents' private costs from repeated strategic responses while steering the Nash equilibrium toward a social objective.</p>
       </section>
 
       <section class="section">
         <h2>Why It Matters</h2>
-        <p>Many societal-scale systems depend on agents whose actions cannot be directly commanded: energy users, drivers, data owners, and service participants all respond strategically to prices, rewards, tolls, or taxes. Adaptive incentive design asks how a planner can update those signals from observed behavior while still improving a collective objective.</p>
+        <p>In energy, traffic, digital platforms, and other networked systems, a planner often influences behavior indirectly through prices, subsidies, taxes, or rewards. The hard part is that agents' costs are private, so the planner must learn from strategic responses while still keeping the system close to socially desirable behavior.</p>
       </section>
 
       <section class="section">
         <h2>Technical Contribution</h2>
         <ul class="plain-list">
-          <li>Frames incentive design as a repeated feedback interaction between a planner and strategic agents.</li>
-          <li>Uses a no-regret perspective to evaluate adaptive incentive updates when agent preferences are private or only partially observed.</li>
-          <li>Connects incentive design with tools from control, online learning, game theory, and multi-agent optimization.</li>
+          <li>Formulates No-Regret Adaptive Incentive Design for nonlinear games with continuous actions and private agent costs.</li>
+          <li>Constructs a least-squares estimator that is strongly consistent under diminishing excitation, reducing the need for persistent probing.</li>
+          <li>Designs switching incentive policies that alternate between exploration and exploitation and achieve almost-sure regret guarantees.</li>
+          <li>Extends the method to an endogenous-noise response model using repeated sampling to avoid bias in preference estimation.</li>
         </ul>
       </section>
 
       <section class="section">
         <h2>Who Should Read This</h2>
-        <p>Researchers in control, game theory, online learning, mechanism design, smart grids, traffic networks, and multi-agent systems.</p>
+        <p>Researchers working on incentive design, game theory, adaptive control, online learning, smart grids, traffic networks, and strategic multi-agent systems.</p>
       </section>
 
       <section class="section">
@@ -75,6 +76,7 @@
         <div class="paper-link-row">
           <a class="text-button" href="https://arxiv.org/abs/2606.02529" target="_blank" rel="noreferrer">arXiv</a>
           <a class="text-button" href="https://arxiv.org/pdf/2606.02529" target="_blank" rel="noreferrer">PDF</a>
+          <a class="text-button" href="https://doi.org/10.48550/arXiv.2606.02529" target="_blank" rel="noreferrer">DOI</a>
           <a class="text-button" href="../publications.html">Publications</a>
           <button class="text-button js-only" type="button" data-copy-target="bibtex-p8">Copy BibTeX</button>
         </div>

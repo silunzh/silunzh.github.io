@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Incentive Design without Hypergradients: A Social-Gradient Method | Silun Zhang</title>
-  <meta name="description" content="Short overview of Incentive Design without Hypergradients: A Social-Gradient Method by G. Vasileiou, L. Zhang, and S. Zhang.">
+  <meta name="description" content="Overview of Incentive Design without Hypergradients: A Social-Gradient Method by G. Vasileiou, L. Zhang, and S. Zhang, including takeaway, contribution, links, and BibTeX.">
   <meta name="citation_title" content="Incentive Design without Hypergradients: A Social-Gradient Method">
   <meta name="citation_author" content="Vasileiou, G.">
   <meta name="citation_author" content="Zhang, L.">
@@ -48,26 +48,27 @@
       <section class="section compact">
         <h1 class="paper-title">Incentive Design without Hypergradients: A Social-Gradient Method</h1>
         <p class="paper-authors">G. Vasileiou, L. Zhang, and S. Zhang, 2026.</p>
-        <p class="paper-takeaway"><strong>Takeaway:</strong> We update incentives through social-gradient information, avoiding direct hypergradient computations through strategic agents' equilibrium responses.</p>
+        <p class="paper-takeaway"><strong>Takeaway:</strong> The paper gives a hypergradient-free incentive law that moves strategic agents toward a socially optimal Nash equilibrium using the gradient of the planner's social cost.</p>
       </section>
 
       <section class="section">
         <h2>Why It Matters</h2>
-        <p>Incentive design often becomes difficult because changing an incentive changes the equilibrium chosen by many strategic agents. Differentiating through that equilibrium map can be expensive, fragile, or unavailable. A hypergradient-free route makes adaptive incentive design more usable in data-limited networked systems.</p>
+        <p>Many incentive design methods optimize through an equilibrium map, which requires sensitivities of agents' responses to incentives. Those sensitivities are often unavailable when agents' cost functions are private. This paper asks what can still be done when the planner observes behavior but cannot compute hypergradients.</p>
       </section>
 
       <section class="section">
         <h2>Technical Contribution</h2>
         <ul class="plain-list">
-          <li>Introduces a social-gradient viewpoint for improving planner objectives through incentive updates.</li>
-          <li>Avoids explicit hypergradient calculations through the agents' equilibrium response map.</li>
-          <li>Targets strategic multi-agent settings where preferences and responses must be learned from interaction.</li>
+          <li>Introduces the social-gradient flow as a hypergradient-free incentive law.</li>
+          <li>Shows that the social-cost gradient is a descent direction for the planner's objective, independent of the detailed agent cost landscape.</li>
+          <li>Proves convergence to the unique socially optimal incentive when equilibrium responses are observable.</li>
+          <li>Derives the same principle as the slow-timescale limit of a two-timescale learning process when agents' strategies evolve faster than incentives.</li>
         </ul>
       </section>
 
       <section class="section">
         <h2>Who Should Read This</h2>
-        <p>Researchers in incentive design, game theory, bilevel optimization, online learning, control, mechanism design, and networked decision systems.</p>
+        <p>Researchers in incentive design, game theory, bilevel optimization, online learning, control, mechanism design, and strategic networked decision systems.</p>
       </section>
 
       <section class="section">
@@ -75,6 +76,7 @@
         <div class="paper-link-row">
           <a class="text-button" href="https://arxiv.org/abs/2604.11346" target="_blank" rel="noreferrer">arXiv</a>
           <a class="text-button" href="https://arxiv.org/pdf/2604.11346" target="_blank" rel="noreferrer">PDF</a>
+          <a class="text-button" href="https://doi.org/10.48550/arXiv.2604.11346" target="_blank" rel="noreferrer">DOI</a>
           <a class="text-button" href="../publications.html">Publications</a>
           <button class="text-button js-only" type="button" data-copy-target="bibtex-p6">Copy BibTeX</button>
         </div>
