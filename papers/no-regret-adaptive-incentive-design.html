@@ -48,21 +48,21 @@
       <section class="section compact">
         <h1 class="paper-title">A No-Regret Framework for Adaptive Incentive Design</h1>
         <p class="paper-authors">G. Vasileiou, L. Zhang, and S. Zhang, 2026.</p>
-        <p class="paper-takeaway"><strong>Takeaway:</strong> The paper introduces a no-regret adaptive incentive design framework that learns agents' private costs from repeated strategic responses while steering the Nash equilibrium toward a social objective.</p>
+        <p class="paper-takeaway"><strong>Takeaway:</strong> The paper introduces a no-Regret Adaptive Incentive Design framework (RAID) that learns agents' private costs from repeated strategic responses while steering the Nash equilibrium toward a social optimum.</p>
       </section>
 
       <section class="section">
         <h2>Why It Matters</h2>
-        <p>In energy, traffic, digital platforms, and other networked systems, a planner often influences behavior indirectly through prices, subsidies, taxes, or rewards. The hard part is that agents' costs are private, so the planner must learn from strategic responses while still keeping the system close to socially desirable behavior.</p>
+        <p>In energy, traffic, digital platforms, and other networked systems, a planner often cannot directly prescribe the participants' actions but instead influences them through incentive signals such as pricing, subsidies, tolls, and taxes. One challenge is that agents' costs are private, so the planner must learn it online.</p>
       </section>
 
       <section class="section">
         <h2>Technical Contribution</h2>
         <ul class="plain-list">
           <li>Formulates No-Regret Adaptive Incentive Design for nonlinear games with continuous actions and private agent costs.</li>
-          <li>Constructs a least-squares estimator that is strongly consistent under diminishing excitation, reducing the need for persistent probing.</li>
+          <li>Constructs a strongly consistent estimator for agent costs.</li>
           <li>Designs switching incentive policies that alternate between exploration and exploitation and achieve almost-sure regret guarantees.</li>
-          <li>Extends the method to an endogenous-noise response model using repeated sampling to avoid bias in preference estimation.</li>
+          <li>Extends the method to an endogenous-noise response model using repeated sampling.</li>
         </ul>
       </section>
 

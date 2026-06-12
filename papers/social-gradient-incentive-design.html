@@ -48,21 +48,22 @@
       <section class="section compact">
         <h1 class="paper-title">Incentive Design without Hypergradients: A Social-Gradient Method</h1>
         <p class="paper-authors">G. Vasileiou, L. Zhang, and S. Zhang, 2026.</p>
-        <p class="paper-takeaway"><strong>Takeaway:</strong> The paper gives a hypergradient-free incentive law that moves strategic agents toward a socially optimal Nash equilibrium using the gradient of the planner's social cost.</p>
+        <p class="paper-takeaway"><strong>Takeaway:</strong> The paper gives a hypergradient-free incentive scheme that steers strategic agents toward a socially optimal Nash equilibrium using the social gradient flow.</p>
       </section>
 
       <section class="section">
         <h2>Why It Matters</h2>
-        <p>Many incentive design methods optimize through an equilibrium map, which requires sensitivities of agents' responses to incentives. Those sensitivities are often unavailable when agents' cost functions are private. This paper asks what can still be done when the planner observes behavior but cannot compute hypergradients.</p>
+        <p>Many incentive design methods optimize through hypergradient (the gradient of the equilibrium map). However, computing or approximating the hypergradients typically requires full or partial knowledge of equilibrium sensitivities to incentives, which is generally unavailable when agents' cost functions are private.</p> 
+        <p>This paper proposes <strong>a hypergradient-free incentive law</strong>, for incentive design when the planner's social cost only depends on the agents' joint actions. </p>
       </section>
 
       <section class="section">
         <h2>Technical Contribution</h2>
         <ul class="plain-list">
-          <li>Introduces the social-gradient flow as a hypergradient-free incentive law.</li>
+          <li>Introduces a (continuous-time) <strong>social-gradient dynamics</strong> for incentive design, when the social cost only depends on agent actions.</li>
           <li>Shows that the social-cost gradient is a descent direction for the planner's objective, independent of the detailed agent cost landscape.</li>
           <li>Proves convergence to the unique socially optimal incentive when equilibrium responses are observable.</li>
-          <li>Derives the same principle as the slow-timescale limit of a two-timescale learning process when agents' strategies evolve faster than incentives.</li>
+          <li>Derives a two-timescale learning process when agents' strategies evolve faster than incentives.</li>
         </ul>
       </section>
 
