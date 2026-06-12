@@ -731,6 +731,54 @@ main {
   margin-top: 12px;
 }
 
+.paper-title {
+  color: var(--accent-dark);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 1.18;
+  margin: 0 0 10px;
+}
+
+.paper-authors {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  margin: 0 0 14px;
+}
+
+.paper-takeaway {
+  background: #fbfcfd;
+  border-left: 4px solid var(--warm);
+  color: var(--accent-dark);
+  font-size: 17px;
+  line-height: 1.52;
+  margin: 16px 0 0;
+  padding: 12px 14px;
+}
+
+.paper-link-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.bibtex-block {
+  background: #fbfcfd;
+  border: 1px solid var(--soft-line);
+  border-radius: 4px;
+  color: #26313d;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 12px 0 0;
+  overflow: auto;
+  padding: 12px 14px;
+  white-space: pre;
+}
+
 .js-only {
   display: none !important;
 }

@@ -21,6 +21,24 @@
   }
 
   function fallbackCopyText(text) {
+    let copied = false;
+    const handler = function (event) {
+      event.clipboardData.setData("text/plain", text);
+      event.preventDefault();
+      copied = true;
+    };
+
+    document.addEventListener("copy", handler);
+    try {
+      if (document.execCommand("copy") && copied) {
+        return Promise.resolve();
+      }
+    } catch (error) {
+      copied = false;
+    } finally {
+      document.removeEventListener("copy", handler);
+    }
+
     const field = document.createElement("textarea");
     field.value = text;
     field.setAttribute("readonly", "");
@@ -45,7 +63,7 @@
 
   function bindCopyButton(button) {
     button.addEventListener("click", function () {
-      copyText(button.dataset.copy).then(
+      copyText(getCopyText(button)).then(
         function () {
           setTemporaryLabel(button, "Copied");
         },
@@ -56,7 +74,21 @@
     });
   }
 
+  function getCopyText(button) {
+    const targetId = button.dataset.copyTarget;
+    if (targetId) {
+      const target = document.getElementById(targetId);
+      return target ? target.textContent.trim() : "";
+    }
+
+    return button.dataset.copy || "";
+  }
+
   document.querySelectorAll("[data-copy]").forEach(function (button) {
+    bindCopyButton(button);
+  });
+
+  document.querySelectorAll("[data-copy-target]").forEach(function (button) {
     bindCopyButton(button);
   });
 
