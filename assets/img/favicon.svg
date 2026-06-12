@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SZ">
-  <rect width="64" height="64" rx="10" fill="#20334f"/>
-  <text x="32" y="41" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#ffffff">SZ</text>
-</svg>
+<svg id="logo-preview" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="max-w-full max-h-full drop-shadow-lg border border-dashed border-gray-600"><style/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#4386f9" font-family="Helvetica, sans-serif" font-weight="bold" font-size="120" style="letter-spacing: 2px; line-height: 1.2; transform-origin: center center;" class=""><title>SZ</title>SZ</text></svg>
