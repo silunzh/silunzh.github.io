@@ -139,12 +139,14 @@ a:focus {
   width: 100%;
 }
 
-.profile h1 {
+.profile h1,
+.profile-name {
   color: var(--accent-dark);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 1.15;
   margin: 18px 0 8px;
+  font-weight: 700;
 }
 
 .profile .role {
@@ -980,7 +982,8 @@ main {
     max-width: 118px;
   }
 
-  .profile h1 {
+  .profile h1,
+  .profile-name {
     font-size: 22px;
     margin-top: 0;
   }
