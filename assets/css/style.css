@@ -698,6 +698,21 @@ main {
   text-decoration: none;
 }
 
+.pub-slides {
+  background: var(--warm);
+  border-color: var(--warm);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgba(42, 31, 18, 0.18);
+}
+
+.pub-slides:hover,
+.pub-slides:focus {
+  background: #895116;
+  border-color: #895116;
+  color: #ffffff;
+}
+
 .tag {
   color: var(--warm);
   font-family: Arial, Helvetica, sans-serif;
