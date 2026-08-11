@@ -93,7 +93,7 @@
   });
 
   const publicationBibtex = {
-    P8: `@misc{vasileiou2026noregret,
+    P6: `@misc{vasileiou2026noregret,
   title = {{A No-Regret Framework for Adaptive Incentive Design}},
   author = {Vasileiou, G. and Zhang, L. and Zhang, S.},
   year = {2026},
@@ -101,15 +101,18 @@
   archivePrefix = {arXiv},
   url = {https://arxiv.org/abs/2606.02529}
 }`,
-    P7: `@misc{sheng2026hyperedge,
+    J9: `@article{sheng2026hyperedge,
   title = {{Hyperedge approximation for stochastic processes on higher-order networks}},
-  author = {Sheng, A. and McAvoy, A. and Tian, Y. and Zhang, S. and Fontan, A. and Plotkin, J. B.},
+  author = {Sheng, Anzhi and McAvoy, Alex and Tian, Ye and Zhang, Silun and Fontan, Angela and Plotkin, Joshua B.},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume = {123},
+  number = {32},
+  pages = {e2619078123},
   year = {2026},
-  eprint = {2605.23444},
-  archivePrefix = {arXiv},
-  url = {https://arxiv.org/abs/2605.23444}
+  doi = {10.1073/pnas.2619078123},
+  url = {https://www.pnas.org/doi/10.1073/pnas.2619078123}
 }`,
-    P6: `@misc{vasileiou2026incentive,
+    P5: `@misc{vasileiou2026incentive,
   title = {{Incentive Design without Hypergradients: A Social-Gradient Method}},
   author = {Vasileiou, G. and Zhang, L. and Zhang, S.},
   year = {2026},
@@ -117,21 +120,13 @@
   archivePrefix = {arXiv},
   url = {https://arxiv.org/abs/2604.11346}
 }`,
-    P5: `@misc{zhang2026stochastic,
+    P4: `@misc{zhang2026stochastic,
   title = {{Stochastic Adaptive Control for Systems with Nonlinear Parameterization: Almost Sure Stability and Tracking}},
   author = {Zhang, L. and Wahlberg, B. and Zhang, S.},
   year = {2026},
   eprint = {2604.06980},
   archivePrefix = {arXiv},
   url = {https://arxiv.org/abs/2604.06980}
-}`,
-    P4: `@misc{vasileiou2026adaptive,
-  title = {{Adaptive Incentive Design with Regret Minimization}},
-  author = {Vasileiou, G. and Zhang, L. and Zhang, S.},
-  year = {2026},
-  eprint = {2604.05977},
-  archivePrefix = {arXiv},
-  url = {https://arxiv.org/abs/2604.05977}
 }`,
     P3: `@misc{fernando2025stochastic,
   title = {{Stochastic Prize-Collecting Games: Strategic Planning in Multi-Robot Systems}},
@@ -237,12 +232,17 @@
   year = {2026},
   url = {https://arxiv.org/abs/2511.20411}
 }`,
-    C14: `@inproceedings{vasileiou2026adaptiveecc,
+    C14: `@inproceedings{vasileiou2026adaptive,
   title = {{Adaptive Incentive Design with Regret Minimization}},
-  author = {Vasileiou, G. and Zhang, L. and Zhang, S.},
-  booktitle = {European Control Conference (ECC)},
+  author = {Vasileiou, Georgios and Zhang, Lantian and Zhang, Silun},
+  booktitle = {2026 European Control Conference (ECC)},
+  pages = {3130--3136},
+  address = {Reykjavik, Iceland},
+  publisher = {IEEE},
   year = {2026},
-  url = {https://arxiv.org/abs/2604.05977}
+  month = jul,
+  isbn = {978-3-907144-13-8},
+  url = {https://ieeexplore.ieee.org/document/11625629}
 }`,
     C13: `@inproceedings{fontan2025collective,
   title = {{Collective decision-making dynamics in hypernetworks}},
