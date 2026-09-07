@@ -303,6 +303,25 @@ main {
   text-transform: uppercase;
 }
 
+.publications-heading-row {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.publications-heading-row .eyebrow {
+  margin-bottom: 0;
+}
+
+.publications-download {
+  display: inline-flex;
+  flex: 0 0 auto;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
 .page-title {
   color: var(--accent-dark);
   font-family: Arial, Helvetica, sans-serif;
@@ -983,6 +1002,15 @@ main {
 }
 
 @media (max-width: 560px) {
+  .publications-download {
+    font-size: 12px;
+    line-height: 1.2;
+    max-width: 140px;
+    padding: 6px 8px;
+    text-align: center;
+    white-space: normal;
+  }
+
   .page-shell {
     padding: 22px 14px 44px;
   }
