@@ -93,6 +93,15 @@
   });
 
   const publicationBibtex = {
+    P7: `@misc{zhang2026adaptivegames,
+  title = {{Adaptive Incentive Design for Linear-Quadratic Dynamic Games: No-Regret Social Coordination}},
+  author = {Zhang, Lantian and Li, Yibei and Vasileiou, Georgios and Xie, Lihua and Zhang, Silun},
+  year = {2026},
+  eprint = {2610.13448},
+  archivePrefix = {arXiv},
+  primaryClass = {eess.SY},
+  url = {https://arxiv.org/abs/2610.13448}
+}`,
     P6: `@misc{vasileiou2026noregret,
   title = {{A No-Regret Framework for Adaptive Incentive Design}},
   author = {Vasileiou, G. and Zhang, L. and Zhang, S.},
